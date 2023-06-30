@@ -23,13 +23,15 @@ namespace SudokuGame
             timer.Interval = 1000;
             timer.Elapsed += Timer_Tick;
         }
-        char letChoice;
+        char letChoice='a';
         int rowChoice;
         int columnChoice;
         int countError = 0;
         int countCorrect = 0;
         bool valid;
         bool wonGame = false;
+        int pencilCount = 0;
+        bool pencil = false;
         void NumSelected1(object sender, EventArgs e)
         {
             letChoice = 'D';
@@ -86,24 +88,45 @@ namespace SudokuGame
             NumSelectDNR.Text = "Letter selected: " + letChoice;
         }
 
-        public ICommand ButtonCommand => new Command<string>(CommandButtonClick);
+        public void PencilTime(object sender, EventArgs e)
+        {
+            pencilCount++;
+            switch (pencilCount % 2)
+            {
+                case 1:
+                    pencil = true;
+                    Console.WriteLine(pencil);
+                    break;
+                case 0:
+                    pencil = false;
+                    Console.WriteLine(pencil);
+                    break;
+                default:
+                    break;
+            }
+        }
 
+        public ICommand ButtonCommand => new Command<string>(CommandButtonClick);
 
 
         public void CommandButtonClick(string a)//Command
         {
-            char r = a[0];
-            char c = a[1];
-            rowChoice = (int)Char.GetNumericValue(r);
-            columnChoice = (int)Char.GetNumericValue(c);
-            char ans = solution[rowChoice][columnChoice];
-            if (ans == letChoice) { valid = true; countCorrect++; Console.WriteLine(countCorrect); }
-            else { valid = false; ErrorCounterDNR.Text = "Errors: " + ++countError; }
+            if (pencil == false && letChoice != 'a')
+            {
+                char r = a[0];
+                char c = a[1];
+                rowChoice = (int)Char.GetNumericValue(r);
+                columnChoice = (int)Char.GetNumericValue(c);
+                char ans = solution[rowChoice][columnChoice];
+                if (ans == letChoice) { valid = true; countCorrect++; Console.WriteLine(countCorrect); }
+                else { valid = false; ErrorCounterDNR.Text = "Errors: " + ++countError; }
+            }
+                
         }//end of Command
 
         async void isValid(object sender, EventArgs e)//isValid function
         {
-            if (valid == true)
+            if (valid == true && pencil==false)
             {
                 (sender as Button).Text = letChoice.ToString();
                 Button clickedButton = (Button)sender;
@@ -133,7 +156,7 @@ namespace SudokuGame
                         break;
                 }
             }
-            if (valid == false)
+            else if (valid == false && pencil==false)
             {
                 (sender as Button).Text = "";
                 switch (countError % 7)
@@ -165,7 +188,11 @@ namespace SudokuGame
                 }
 
             }
-
+            else if (pencil == true && letChoice != 'a')
+            {
+                (sender as Button).TextColor = Color.Red;
+                (sender as Button).Text = letChoice.ToString();
+            }
             if (countCorrect == 56)
             {
                 wonGame = true;

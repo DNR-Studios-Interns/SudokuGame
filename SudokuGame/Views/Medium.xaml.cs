@@ -25,7 +25,7 @@ namespace SudokuGame
             timer.Interval = 1000;
             timer.Elapsed += Timer_Tick;
         }
-        char numChoice;
+        char numChoice='0';
         int rowChoice;
         int columnChoice;
         int countError = 0;
@@ -115,7 +115,7 @@ namespace SudokuGame
 
         public void CommandButtonClick(string a)//Command
         {
-            if(pencil==false)
+            if(pencil==false && numChoice!='0')
             {
                 char r = a[0];
                 char c = a[1];
@@ -192,7 +192,7 @@ namespace SudokuGame
                 }
 
             }
-            else if(pencil == true)
+            else if(pencil == true && numChoice!='0')
             {
                 (sender as Button).TextColor = Color.Red;
                 (sender as Button).Text = numChoice.ToString();

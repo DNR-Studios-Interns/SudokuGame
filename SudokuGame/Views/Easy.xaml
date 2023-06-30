@@ -26,6 +26,11 @@
 
                 </Label>
             </Grid>
+
+            <ImageButton Source="pencil.png"
+             VerticalOptions="CenterAndExpand" HeightRequest="25" HorizontalOptions="End" BackgroundColor="#00000000" Clicked="PencilTime">
+            </ImageButton>
+
             <Grid ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="-5">
 
                 <Grid Grid.Row="0" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">

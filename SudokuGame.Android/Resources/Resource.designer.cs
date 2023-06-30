@@ -24905,16 +24905,19 @@ namespace SudokuGame.Droid
 			public const int notify_panel_notification_icon_bg = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int preference_list_divider_material = 2131165366;
+			public const int pencil = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int test_custom_background = 2131165367;
+			public const int preference_list_divider_material = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int tooltip_frame_dark = 2131165368;
+			public const int test_custom_background = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int tooltip_frame_light = 2131165369;
+			public const int tooltip_frame_dark = 2131165369;
+			
+			// aapt resource value: 0x7F0700BA
+			public const int tooltip_frame_light = 2131165370;
 			
 			static Drawable()
 			{
