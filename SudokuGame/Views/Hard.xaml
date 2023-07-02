@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SudokuGame.Hard">
     <ContentPage.Content>
-        <StackLayout Padding="1" BackgroundColor="#e42b31">
+        <StackLayout Padding="1" BackgroundColor="#e42b31" VerticalOptions="FillAndExpand" Spacing="15">
             <Frame BackgroundColor="#e42b31" Padding="24" CornerRadius="0">
                 <Label Text="Sudoku" 
                    HorizontalTextAlignment="Center" 
@@ -25,11 +25,11 @@
             </Grid>
 
             <ImageButton Source="pencil.png"
-             VerticalOptions="CenterAndExpand" HeightRequest="25" HorizontalOptions="End" BackgroundColor="#00000000" Clicked="PencilTime">
+             VerticalOptions="Center" HeightRequest="25" HorizontalOptions="End" BackgroundColor="#00000000" Clicked="PencilTime">
             </ImageButton>
-            <Grid ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="-5">
+            <Grid ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0">
 
-                <Grid Grid.Row="0" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="0" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text=" " Command="{Binding ButtonCommand}" CommandParameter="00" Clicked="isValid"/>
                     <Button Grid.Row="0" Grid.Column="1" Text="2"/>
                     <Button Grid.Row="0" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="02" Clicked="isValid"/>
@@ -43,7 +43,7 @@
                     <Button Grid.Row="2" Grid.Column="2" Text="4"/>
                 </Grid>
 
-                <Grid Grid.Row="0" Grid.Column="1" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="0" Grid.Column="1" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text=" " Command="{Binding ButtonCommand}" CommandParameter="03" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text=" " Command="{Binding ButtonCommand}" CommandParameter="04" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="05" Clicked="isValid"></Button>
@@ -57,7 +57,7 @@
                     <Button Grid.Row="2" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="25" Clicked="isValid"></Button>
                 </Grid>
 
-                <Grid Grid.Row="0" Grid.Column="2" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="0" Grid.Column="2" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text=" " Command="{Binding ButtonCommand}" CommandParameter="06" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text="" Command="{Binding ButtonCommand}" CommandParameter="07" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="08" Clicked="isValid"></Button>
@@ -71,7 +71,7 @@
                     <Button Grid.Row="2" Grid.Column="2" Text="" Command="{Binding ButtonCommand}" CommandParameter="28" Clicked="isValid"></Button>
                 </Grid>
 
-                <Grid Grid.Row="1" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="1" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text=" " Command="{Binding ButtonCommand}" CommandParameter="30" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text=" " Command="{Binding ButtonCommand}" CommandParameter="31" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="32" Clicked="isValid"></Button>
@@ -86,7 +86,7 @@
                 </Grid>
 
 
-                <Grid Grid.Row="1" Grid.Column="1" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="1" Grid.Column="1" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text=" " Command="{Binding ButtonCommand}" CommandParameter="33" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text=" " Command="{Binding ButtonCommand}" CommandParameter="34" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text="3"></Button>
@@ -99,7 +99,7 @@
                     <Button Grid.Row="2" Grid.Column="1" Text="" Command="{Binding ButtonCommand}" CommandParameter="54" Clicked="isValid"></Button>
                     <Button Grid.Row="2" Grid.Column="2" Text="" Command="{Binding ButtonCommand}" CommandParameter="55" Clicked="isValid"></Button>
                 </Grid>
-                <Grid Grid.Row="1" Grid.Column="2" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="1" Grid.Column="2" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text="" Command="{Binding ButtonCommand}" CommandParameter="36" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text="" Command="{Binding ButtonCommand}" CommandParameter="37" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text="2"></Button>
@@ -113,7 +113,7 @@
                     <Button Grid.Row="2" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="58" Clicked="isValid"></Button>
                 </Grid>
 
-                <Grid Grid.Row="2" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="2" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text=" " Command="{Binding ButtonCommand}" CommandParameter="60" Clicked="isValid" ></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text=" " Command="{Binding ButtonCommand}" CommandParameter="61" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="62" Clicked="isValid"></Button>
@@ -126,7 +126,7 @@
                     <Button Grid.Row="2" Grid.Column="1" Text=" " Command="{Binding ButtonCommand}" CommandParameter="81" Clicked="isValid"></Button>
                     <Button Grid.Row="2" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="82" Clicked="isValid"></Button>
                 </Grid>
-                <Grid Grid.Row="2" Grid.Column="1" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="2" Grid.Column="1" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text="" Command="{Binding ButtonCommand}" CommandParameter="63" Clicked="isValid"></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text="1" ></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text="" Command="{Binding ButtonCommand}" CommandParameter="65" Clicked="isValid"></Button>
@@ -139,7 +139,7 @@
                     <Button Grid.Row="2" Grid.Column="1" Text=" " Command="{Binding ButtonCommand}" CommandParameter="84" Clicked="isValid"></Button>
                     <Button Grid.Row="2" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="85" Clicked="isValid"></Button>
                 </Grid>
-                <Grid Grid.Row="2" Grid.Column="2" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="0" ColumnSpacing="0" Padding="5">
+                <Grid Grid.Row="2" Grid.Column="2" ColumnDefinitions="*" RowDefinitions="*" RowSpacing="5" ColumnSpacing="5" Padding="5">
                     <Button Grid.Row="0" Grid.Column="0" Text="7"></Button>
                     <Button Grid.Row="0" Grid.Column="1" Text="8"></Button>
                     <Button Grid.Row="0" Grid.Column="2" Text=" " Command="{Binding ButtonCommand}" CommandParameter="68" Clicked="isValid"></Button>

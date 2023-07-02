@@ -18,7 +18,7 @@ namespace SudokuGame
         }
         async void OnDisplayActionSheetButtonClicked(object sender, EventArgs e)
         {
-            string action = await DisplayActionSheet("Choose Difficulty:", "Nevermind", null, "Easy", "Medium", "Hard", "DnR Level");
+            string action = await DisplayActionSheet("Choose Difficulty:", "Never mind", null, "Easy", "Medium", "Hard", "DnR Level");
             Console.WriteLine("Action: " + action);
             if(action=="Easy")
             {

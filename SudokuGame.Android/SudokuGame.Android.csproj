@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -103,7 +102,7 @@
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SudokuGame\SudokuGame.csproj">
-      <Project>{A1EDBD48-A6AE-4914-AC3B-85C7041FFAB5}</Project>
+      <Project>{A5C48DA0-ECBE-4A4C-A64E-16CFEC37C27A}</Project>
       <Name>SudokuGame</Name>
     </ProjectReference>
   </ItemGroup>
