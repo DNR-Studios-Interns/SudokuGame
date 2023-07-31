@@ -9,6 +9,9 @@
             </Style>
             <Style TargetType="Button">
                 <Setter Property="FontFamily" Value="Louis George Cafe Bold"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="CornerRadius" Value="2"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

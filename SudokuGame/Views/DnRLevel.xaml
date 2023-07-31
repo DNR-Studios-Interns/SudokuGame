@@ -154,7 +154,6 @@
                     <Button Grid.Row="2" Grid.Column="2" Text="" Command="{Binding ButtonCommand}" CommandParameter="88" Clicked="isValid"></Button>
                 </Grid>
             </Grid>
-            <Label Text=" "></Label>
             <Grid ColumnDefinitions="1*, 1*" RowDefinitions="1*, Auto" ColumnSpacing="0" Padding="5">
                 <Button Grid.Row="0" Grid.Column="0" Text="D" Clicked="NumSelected1" BorderColor="black" BorderWidth="1"/>
                 <Button Grid.Row="0" Grid.Column="1" Text="N" Clicked="NumSelected2" BorderColor="black" BorderWidth="1"/>
@@ -166,8 +165,7 @@
                 <Button Grid.Row="0" Grid.Column="7" Text="I" Clicked="NumSelected8" BorderColor="black" BorderWidth="1"/>
                 <Button Grid.Row="0" Grid.Column="8" Text="O" Clicked="NumSelected9" BorderColor="black" BorderWidth="1"/>
             </Grid>
-            <Label></Label>
-            <Label x:Name="NumSelectDNR" Text="Letter Selected:" HorizontalOptions="CenterAndExpand"></Label>
+            <Label x:Name="NumSelectDNR" Text="Letter Selected:" HorizontalOptions="Center" FontSize="Body" TextColor="White"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
