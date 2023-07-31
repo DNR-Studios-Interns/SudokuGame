@@ -200,4 +200,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\pencil.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pencil_select.png" />
+  </ItemGroup>
 </Project>

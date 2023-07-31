@@ -99,10 +99,12 @@ namespace SudokuGame
             {
                 case 1:
                     pencil = true;
+                    MyImageButton.Source = "pencil_select.png";
                     Console.WriteLine(pencil);
                     break;
                 case 0:
                     pencil = false;
+                    MyImageButton.Source = "pencil.png";
                     Console.WriteLine(pencil);
                     break;
                 default:

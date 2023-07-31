@@ -24,7 +24,7 @@
                 </Label>
             </Grid>
 
-            <ImageButton Source="pencil.png"
+            <ImageButton x:Name="MyImageButton" Source="pencil.png"
              VerticalOptions="Center" HeightRequest="25" HorizontalOptions="End" BackgroundColor="#00000000" Clicked="PencilTime">
             </ImageButton>
 

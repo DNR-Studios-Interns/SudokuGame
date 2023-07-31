@@ -99,7 +99,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pencil_select.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SudokuGame\SudokuGame.csproj">
       <Project>{A5C48DA0-ECBE-4A4C-A64E-16CFEC37C27A}</Project>
