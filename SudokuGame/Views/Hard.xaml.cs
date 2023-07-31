@@ -113,11 +113,29 @@ namespace SudokuGame
                 case 1:
                     pencil = true;
                     MyImageButton.Source = "pencil_select.png";
+                    Choice1.TextColor = Color.Red;
+                    Choice2.TextColor = Color.Red;
+                    Choice3.TextColor = Color.Red;
+                    Choice4.TextColor = Color.Red;
+                    Choice5.TextColor = Color.Red;
+                    Choice6.TextColor = Color.Red;
+                    Choice7.TextColor = Color.Red;
+                    Choice8.TextColor = Color.Red;
+                    Choice9.TextColor = Color.Red;
                     Console.WriteLine(pencil);
                     break;
                 case 0:
                     pencil = false;
                     MyImageButton.Source = "pencil.png";
+                    Choice1.TextColor = Color.Black;
+                    Choice2.TextColor = Color.Black;
+                    Choice3.TextColor = Color.Black;
+                    Choice4.TextColor = Color.Black;
+                    Choice5.TextColor = Color.Black;
+                    Choice6.TextColor = Color.Black;
+                    Choice7.TextColor = Color.Black;
+                    Choice8.TextColor = Color.Black;
+                    Choice9.TextColor = Color.Black;
                     Console.WriteLine(pencil);
                     break;
                 default:

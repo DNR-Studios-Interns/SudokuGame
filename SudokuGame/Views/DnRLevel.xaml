@@ -155,15 +155,15 @@
                 </Grid>
             </Grid>
             <Grid ColumnDefinitions="1*, 1*" RowDefinitions="1*, Auto" ColumnSpacing="0" Padding="5">
-                <Button Grid.Row="0" Grid.Column="0" Text="D" Clicked="NumSelected1" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="1" Text="N" Clicked="NumSelected2" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="2" Text="R" Clicked="NumSelected3" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="3" Text="S" Clicked="NumSelected4" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="4" Text="T" Clicked="NumSelected5" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="5" Text="U" Clicked="NumSelected6" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="6" Text="D" Clicked="NumSelected7" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="7" Text="I" Clicked="NumSelected8" BorderColor="black" BorderWidth="1"/>
-                <Button Grid.Row="0" Grid.Column="8" Text="O" Clicked="NumSelected9" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice1" Grid.Row="0" Grid.Column="0" Text="D" Clicked="NumSelected1" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice2" Grid.Row="0" Grid.Column="1" Text="N" Clicked="NumSelected2" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice3" Grid.Row="0" Grid.Column="2" Text="R" Clicked="NumSelected3" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice4" Grid.Row="0" Grid.Column="3" Text="S" Clicked="NumSelected4" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice5" Grid.Row="0" Grid.Column="4" Text="T" Clicked="NumSelected5" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice6" Grid.Row="0" Grid.Column="5" Text="U" Clicked="NumSelected6" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice7" Grid.Row="0" Grid.Column="6" Text="D" Clicked="NumSelected7" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice8" Grid.Row="0" Grid.Column="7" Text="I" Clicked="NumSelected8" BorderColor="black" BorderWidth="1"/>
+                <Button x:Name="Choice9" Grid.Row="0" Grid.Column="8" Text="O" Clicked="NumSelected9" BorderColor="black" BorderWidth="1"/>
             </Grid>
             <Label x:Name="NumSelectDNR" Text="Letter Selected:" HorizontalOptions="Center" FontSize="Body" TextColor="White"></Label>
         </StackLayout>
